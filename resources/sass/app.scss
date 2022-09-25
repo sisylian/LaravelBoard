@@ -1,0 +1,87 @@
+// Fonts
+@import url('https://fonts.googleapis.com/css?family=Nunito');
+
+// Variables
+@import 'variables';
+
+// Bootstrap
+@import 'bootstrap/scss/bootstrap';
+
+$bgcolor: white;
+$textcolor: darkblue;
+$fontsize: 18px;
+
+body {
+  background-color: $bgcolor;
+  color: $textcolor;
+  font-size: $fontsize;
+}
+
+.alert {
+  cursor: pointer;
+}
+
+#navbarSupportedContent {
+    .navbar-nav.ms-auto{
+      float: right;
+    }
+}
+
+.text-right {
+  text-align: right;
+}
+
+.table-responsive{
+  min-height: 350px;
+  position: relative;
+  overflow: hidden;
+  .simonboard {
+    th{
+      text-align: center;
+    }
+    tbody{
+      tr:hover{
+        background-color: lightgray;
+      }
+      td{
+        cursor: pointer;
+      }
+    }
+  }
+  nav {
+    position: absolute;
+    bottom: 0;
+  }
+}
+
+.commentarea {
+  display: flex;
+}
+
+.widget {
+  .panel-title { display:inline }
+  .label-info { float: right; }
+  .panel-body { 
+    padding:0px; 
+    .list-group { 
+      margin-bottom: 0; 
+      .btn-block { border-top-left-radius:0px;border-top-right-radius:0px; }
+      li.list-group-item {
+        border-radius: 0;
+        border: 0;
+        border-top: 1px solid #ddd;
+        &:hover{
+          background-color: rgba(86,61,124,.1);
+        }
+        .mic-info { color: #666666;font-size: 11px; }
+        .action { margin-top:5px; }
+        .comment-text { font-size: 12px; min-height: 40px; padding: 6px 0px; }
+      }
+    }
+  }
+}
+
+#copyright{
+  width: 100%;
+  text-align: center;
+}
